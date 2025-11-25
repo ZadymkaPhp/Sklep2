@@ -1,0 +1,212 @@
+/* ===== GLOBALNE STYLE ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    background-color: #f5f7fa;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* ===== NAGŁÓWEK - niebieski, biały tekst, duży padding ===== */
+header {
+    background-color: #2563eb;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+    margin: 0;
+}
+
+header h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 18px;
+}
+
+/* ===== MAIN SECTION / CONTAINER ===== */
+.main, section, .kontener {
+    background-color: white;
+    padding: 30px;
+    margin: 20px auto;
+    max-width: 800px;
+    border: 2px solid #e0e7ff;
+    border-radius: 8px;
+}
+
+/* ===== NAGŁÓWKI ===== */
+h1 {
+    color: #2563eb;
+    font-size: 32px;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 3px solid #2563eb;
+}
+
+h2 {
+    color: #2563eb;
+    font-size: 24px;
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+
+/* FORMULARZE  */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-weight: 600;
+    color: #2563eb;
+    margin-bottom: 5px;
+    margin-top: 10px;
+    display: block;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="number"],
+textarea,
+select {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #e0e7ff;
+    border-radius: 6px;
+    font-size: 16px;
+    font-family: inherit;
+}
+
+input[type="text"]:hover,
+input[type="email"]:hover,
+input[type="tel"]:hover,
+input[type="number"]:hover,
+textarea:hover,
+select:hover {
+    border-color: #2563eb;
+    background-color: #f0f4ff;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    outline: none;
+    border-color: #2563eb;
+}
+
+textarea {
+    min-height: 100px;
+}
+
+/*  PRZYCISKI */
+button {
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: 600;
+    border: 2px solid transparent;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+button[type="submit"] {
+    background-color: #2563eb;
+    color: white;
+    border-color: #2563eb;
+}
+
+button[type="submit"]:hover {
+    background-color: #1d4ed8;
+    border-color: #1d4ed8;
+}
+
+button[type="reset"] {
+    background-color: #e5e7eb;
+    color: #333;
+    border-color: #d1d5db;
+}
+
+button[type="reset"]:hover {
+    background-color: #d1d5db;
+    border-color: #9ca3af;
+}
+
+/* ===== SECTION Z PRZYCISKAMI ===== */
+.actions {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.actions button {
+    width: 48%;
+}
+
+/* ===== POTWIERDZENIE - KONTENER ===== */
+.kontener {
+    background-color: white;
+    padding: 30px;
+    max-width: 800px;
+    margin: 30px auto;
+    border: 2px solid #16a34a;
+    border-radius: 8px;
+}
+
+.kontener h1 {
+    color: #16a34a;
+    border-bottom: 3px solid #16a34a;
+}
+
+.kontener h2 {
+    color: #2563eb;
+}
+
+.kontener p {
+    padding: 10px 0;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+/* Efekt :nth-child(even) dla parzystych wierszy */
+.kontener p:nth-child(even) {
+    background-color: #f9fafb;
+    padding-left: 10px;
+}
+
+.kontener p:hover {
+    background-color: #f0f4ff;
+}
+
+.kontener p:last-of-type {
+    border-bottom: none;
+}
+
+.kontener b {
+    color: #2563eb;
+    display: inline-block;
+    min-width: 120px;
+}
+
+/* ===== LINKI ===== */
+a {
+    color: #2563eb;
+    text-decoration: none;
+    font-weight: 600;
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: 2px solid #2563eb;
+    border-radius: 6px;
+}
+
+a:hover {
+    color: white;
+    background-color: #2563eb;
+    text-decoration: none;
+}
+
